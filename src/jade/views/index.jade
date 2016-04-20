@@ -1,0 +1,100 @@
+extends ../template.jade
+include ../partials/mixins
+
+block append title 
+	| Home
+
+block append style
+	style.
+		.carousel-spacer{
+			width:100%;
+			height:250px;
+			display:block;
+		}
+		.media-img{
+			border-radius:10px;
+			max-height:100%;
+			max-width:100%;
+		}
+
+block content
+	.jumbotron.text-center
+		h2 Physical Medicine and Rehabilitation
+		p With over 10 years of extensive training and experience in Prolotherapy, Dr. Meyer is the ONLY Capital Region Physician offering a full-spectrum of Prolotherapy options. This non-surgical approach offers an extremely affordable, and more natural path to eliminating pain. Get back to enjoying activities and living a healthy, full life today!
+
+	a(href='http://google.com')
+		+picture_paragraph('img/Assessment.jpg', 'left')
+			h3.media-heading Assesment:
+			p Expert diagnosis on the source of pain, injury, and decrease in abilities, even when standard tests have not been helpful!
+			p A thorough history, physical exam and biomechanical assessment help determine factors contributing to the dysfunction and pain.
+			p Experience analyzing pain from sports injury, arthritis, fibromyalgia, disc dz, surgery, pregnancies, middle age, et al.
+			p A complete explanation of your problem and discussion of the most advanced non-invasive treatment options.
+	br
+
+	.media
+		a(href='http://google.com')
+			.col-xs-12.col-sm-4
+				img.media-img(src='img/Assessment.jpg')
+			.col-xs-12.col-sm-8
+				h3.media-heading Assesment:
+				p Expert diagnosis on the source of pain, injury, and decrease in abilities, even when standard tests have not been helpful!
+				p A thorough history, physical exam and biomechanical assessment help determine factors contributing to the dysfunction and pain.
+				p Experience analyzing pain from sports injury, arthritis, fibromyalgia, disc dz, surgery, pregnancies, middle age, et al.
+				p A complete explanation of your problem and discussion of the most advanced non-invasive treatment options.
+	br
+
+	
+	.media
+		a.text-right(href='approach.html')
+			.col-xs-12.col-sm-4.col-sm-push-8
+				img.media-img(src='img/Treatment.jpg')
+			.col-xs-12.col-sm-8.col-sm-pull-4
+				h3.media-heading Treatment:
+				p Recieve Individually Designed and Tailored Treatment options.
+				P Programs are Designed to Restore Maximum Function without surgery.
+				p Specializing in the treatment of muscle, bursae, joint, ligament and nerve pain.
+				p Utilizing Mastery of understanding the Musculoskeletal System,  Movement, Exercise, and  Neuromuscular Retraining.
+	br
+
+	.media
+		a(href='prolotherapy.html')
+			.col-xs-12.col-sm-4
+				img.media-img(src='img/Techniques.jpg')
+			.col-xs-12.col-sm-8
+				h3.media-heading Techniques:
+				p No Steroids, no Pain Killers and no Surgery!
+				p Applying Prolotherapy injections to facilitate healing and tissue regeneration.
+				p Emphasis on NeuroMuscular Retraining and Proper Biomechanics.
+	br
+
+	br
+	br
+
+	.text-center
+		h1 Testimonials
+		hr
+		div(id="testimonials" class="carousel slide" data-ride="carousel")
+			ol(class="carousel-indicators")
+				li(data-target="#testimonials" data-slide-to="0" class="active")
+				li(data-target="#testimonials" data-slide-to="1")
+				li(data-target="#testimonials" data-slide-to="2")
+			div(class="carousel-inner" role="listbox")
+				+carousel_slide( "Pastor Chris Gerardi", true) "I'm very happy with the successful treatment Dr. Meyer has been giving me. Natural, effective, to the source of the problem, and cost effective. What more could you want?"
+
+				+carousel_slide( "Z. Shafer" ) "When I fist saw Dr. Meyer, I could barely make it up the stairs to her office at the time. I had a constant pain down the front of my shin. I was desperate for help. I was upset because I couldn't even walk onto the field and watch my grandson's Little League games. Dr. M and Prolotherapy changed my life! Now I walk comfortably and move freely. And, I know where to go for help when I need it."
+
+				+carousel_slide( "H.S. Champion Runner, Courtney Tedeschi" ) "My experience with Joy Meyer has been exceptional. Her ability to know exactly what my injury is and know exactly how to treat it is amazing! Within a short period of time doing her recommended excercises and checkups, I am back on my feet and free of injury!"
+
+				+carousel_slide( "College of St. Rose Star Runner, Macky Lloyd" ) "I was struggling with a sever case of Plantar Fasciitis for many months until the tendon finally gave out and tore. I went from being frustrated, running in pain every day, to running pain-free! If my foot acts up again - I will definitely be back for some Prolo!"
+
+				+carousel_slide( "Bob Balcom" ) "Dr. Meyer is a very focused doctor with a completely different perspective. She analyzes your problem from a physical function standpoint. I have seen her for my back and knee. The combination of rethinking of how to use my body, how to strengthen those muscles I should be using and don't, and prolotherapy has given me tremendous relief to my back. My knee pain diminished thanks to prolo. It took more time but I decided against the knee surgery and I'm glad I did."
+
+				+carousel_slide( "Linda Murray" ) "Great doctor! The only doctor that helped me after 10 years of searching for someone for back and hip problem. Prolotherapy worked for me."
+
+
+
+
+
+
+
+

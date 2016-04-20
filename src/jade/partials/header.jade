@@ -1,0 +1,41 @@
+header
+	div(id="titleBar" style="position: relative; z-index: 10")
+		.container
+			.row
+				.col-sm-6.col-xs-12#header-left
+					img#logo(src="http://rehabmed.net/images/logo.png")
+				.col-sm-6.col-xs-12#header-right
+						h3 (518) 360-6627
+						h4 1659 Central Ave.
+						h4 Colonie, NY 12205
+						p: a(class="btn btn-xs btn-primary" href="#" role="button") Make an Appointment
+
+
+	nav( role="navigation", class="navbar navbar-default navbar-static-top", style="position: relative; z-index: 1; box-shadow: 0 0 20px 1px black")
+		.container
+			.navbar-header
+				button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#dropdown_menu", aria-expanded="false", aria-controls="navbar")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				//- a.navbar-brand(href="#")= "Joy L. Meyer"
+
+			.collapse.navbar-collapse( id="dropdown_menu" )
+				ul.nav.navbar-nav
+					+nav_item( "index.html", "active" ) Home
+					+nav_item( "prolotherapy.html" ) Prolotherapy
+					+nav_item_dropdown( "#" )( label="Treatments")
+						+nav_item( "physiatry.html" ) Physiatry
+						+nav_item( "approach.html" ) My Approach
+						+nav_divider
+						+nav_item( "ailments.html" ) Ailments
+					+nav_item( "about.html" ) About Joy
+					+nav_item( "appointments.html" ) Appointments
+					+nav_item( "contact.html" ) Contact & Directions
+				ul.nav.navbar-nav.navbar-right
+					+nav_item("https://www.facebook.com/JoyLMeyerMd", "_blank") 
+						span.glyphicon.glyphicon-user
+						span 
+						| Facebook
+						//- img(src="http://image005.flaticon.com/28/svg/33/33702.svg")

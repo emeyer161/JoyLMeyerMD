@@ -1,0 +1,50 @@
+@import "../../node_modules/bootstrap-less/bootstrap/index";
+
+@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+@brand-primary:  #3189B2;
+
+body{
+	background-color:@brand-primary;
+}
+h1,h2,h3,h4,h5,h6{
+	color:@brand-primary;
+}
+p{
+	color:#424242;
+	font-size:125%
+}
+#titleBar{
+	width:100%;
+	background-color:white;
+}
+#logo{
+	height:150px;
+}
+.navbar{
+	margin-bottom:0px;
+	background-color:#FFDDB4;
+}
+#header-right{
+	text-align:right;
+}
+@media (max-width: @screen-sm) {
+   	#header-right, #header-left{
+		text-align:center;
+   	}
+}
+#content{
+	padding:15px;
+	background-color:white;
+	border-left: 10px solid #8EDCFF;
+	border-right: 10px solid #8EDCFF;
+}
+#footerBar{
+	background-color:#FFDDB4;
+	height:200px;
+}
+
+
+.page-img{
+	width:100%
+}

@@ -1,0 +1,18 @@
+doctype html
+html(lang="en" dir="ltr")
+	head
+		block head
+			include partials/head.jade
+			title
+				block title
+					|Joy L. Meyer |
+			block style
+
+	body
+		block header
+			include partials/header.jade
+		.container#content
+			block content
+		block footer
+			include partials/footer.jade
+			

@@ -1,0 +1,43 @@
+//- Navbar mixins
+ 
+mixin nav_item(href, newTab, active)
+	li(class=active): a( href=href target=newTab)
+		block
+ 
+mixin nav_item_dropdown(href, active)
+	li(class=["dropdown", active])
+		a.dropdown-toggle( href=href, data-toggle="dropdown", role="button", aria-expanded="false" )= attributes.label
+			span.caret
+		ul.dropdown-menu( role="menu" )
+			block
+ 
+mixin nav_divider
+	li.divider
+ 
+mixin nav_header
+	li.dropdown-header
+		block
+ 
+//- End navbar mixins
+
+
+mixin picture_paragraph(imgSrc, side)
+	.picture-paragraph
+		.col-xs-12.col-sm-4(style="padding-top:15px; float: #{side};")
+			img(src=imgSrc style="width:100%; border-radius:5px;")
+		.caption(style="padding: 15px;")
+			block
+
+
+//- Carousel mixins
+
+mixin carousel_slide(author, active)
+	div(class=(active ? "item active" : "item"))
+		.container
+			.carousel-spacer
+			.carousel-caption
+				p
+					block
+				h3= author
+
+//- End Carousel mixins
