@@ -22,7 +22,7 @@ mixin nav_header
 
 
 mixin picture_paragraph(imgSrc, side)
-	.picture-paragraph
+	.picture-paragraph(style="overflow:auto")
 		.col-xs-12.col-sm-4(style="padding-top:15px; float: #{side};")
 			img(src=imgSrc style="width:100%; border-radius:5px;")
 		.caption(style="padding: 15px;")
@@ -34,7 +34,7 @@ mixin picture_paragraph(imgSrc, side)
 mixin carousel_slide(author, active)
 	div(class=(active ? "item active" : "item"))
 		.container
-			.carousel-spacer
+			.carousel-spacer(style="width:100%; height:250px; display:block;")
 			.carousel-caption
 				p
 					block

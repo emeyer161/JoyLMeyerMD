@@ -10,15 +10,8 @@
       Joy L. Meyer |
       Home</title>
     <style>
-      .carousel-spacer{
-      	width:100%;
-      	height:250px;
-      	display:block;
-      }
-      .media-img{
-      	border-radius:10px;
-      	max-height:100%;
-      	max-width:100%;
+      .para-link:hover,.para-link:active{
+      	text-decoration:none;
       }
       
     </style>
@@ -28,7 +21,13 @@
       <div id="titleBar" style="position: relative; z-index: 10">
         <div class="container">
           <div class="row">
-            <div id="header-left" class="col-sm-6 col-xs-12"><img id="logo" src="http://rehabmed.net/images/logo.png"></div>
+            <div id="header-left" class="col-sm-6 col-xs-12">
+              <div class="col-xs-4"><img id="logo" src="http://jeffwardmd.com/images/abpmrlogo.jpg"></div>
+              <div class="col-xs-8">
+                <h1>Joy L Meyer, M.D.</h1>
+                <h3>Physical Medicine and Rehabilitation</h3>
+              </div>
+            </div>
             <div id="header-right" class="col-sm-6 col-xs-12">
               <h3>(518) 360-6627</h3>
               <h4>1659 Central Ave.</h4>
@@ -40,27 +39,31 @@
       </div>
       <nav role="navigation" style="position: relative; z-index: 1; box-shadow: 0 0 20px 1px black" class="navbar navbar-default navbar-static-top">
         <div class="container">
-          <div class="navbar-header">
+          <div class="navbar-header"><a href="index.html" class="navbar-brand">Home</a>
             <button type="button" data-toggle="collapse" data-target="#dropdown_menu" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           </div>
           <div id="dropdown_menu" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li><a href="index.html" target="active">Home</a></li>
-              <li><a href="prolotherapy.html">Prolotherapy</a></li>
-              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">Treatments<span class="caret"></span></a>
+              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">Learn More<span class="caret"></span></a>
                 <ul role="menu" class="dropdown-menu">
-                  <li><a href="physiatry.html">Physiatry</a></li>
-                  <li><a href="approach.html">My Approach</a></li>
-                  <li class="divider"></li>
-                  <li><a href="ailments.html">Ailments</a></li>
+                  <li><a href="http://www.aapmr.org/about-physiatry/about-physical-medicine-rehabilitation/what-is-physiatry" target="_blank">Physiatry</a></li>
+                  <li><a href="prolotherapy.html">Prolotherapy</a></li>
+                  <li><a href="drmeyer.html">Dr. Meyer</a></li>
                 </ul>
               </li>
-              <li><a href="about.html">About Joy</a></li>
-              <li><a href="appointments.html">Appointments</a></li>
-              <li><a href="contact.html">Contact & Directions</a></li>
+              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">Common Cases<span class="caret"></span></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li><a href="golfers.html">Golfers</a></li>
+                  <li><a href="runners.html">Runners</a></li>
+                  <li><a href="knees.html">Knee Pain</a></li>
+                  <li><a href="shoulders.html">Shoulder Pain</a></li>
+                </ul>
+              </li>
+              <li><a href="appointments.html" target="active">Appointments</a></li>
+              <li><a href="contact.html">Contact & Locations</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="https://www.facebook.com/JoyLMeyerMd" target="_blank"> <span class="glyphicon glyphicon-user"></span><span> </span>Facebook</a></li>
+              <li><a href="https://www.facebook.com/JoyLMeyerMd" target="_blank"><span class="glyphicon glyphicon-user"></span><span> </span>Facebook</a></li>
             </ul>
           </div>
         </div>
@@ -68,45 +71,51 @@
     </header>
     <div id="content" class="container">
       <div class="jumbotron text-center">
-        <h2>Physical Medicine and Rehabilitation</h2>
-        <p>With over 10 years of extensive training and experience in Prolotherapy, Dr. Meyer is the ONLY Capital Region Physician offering a full-spectrum of Prolotherapy options. This non-surgical approach offers an extremely affordable, and more natural path to eliminating pain. Get back to enjoying activities and living a healthy, full life today!</p>
-      </div><a href="http://google.com">
-        <div class="picture-paragraph">
+        <h2>Board Certified in PM&R</h2>
+        <h4>Compassionate and Personalized Care!</h4>
+        <p>With over 15 years of extensive training and experience in Prolotherapy, Dr. Meyer is the ONLY Capital Region Physician offering a full-spectrum of Prolotherapy options. This non-surgical approach offers an extremely affordable, and more natural path to eliminating pain. Get back to enjoying activities and living a healthy, full life today!</p>
+      </div><a href="http://google.com" class="para-link">
+        <div style="overflow:auto" class="picture-paragraph">
           <div style="padding-top:15px; float: left;" class="col-xs-12 col-sm-4"><img src="img/Assessment.jpg" style="width:100%; border-radius:5px;"/></div>
           <div style="padding: 15px;" class="caption">
-            <h3 class="media-heading">Assesment:</h3>
-            <p>Expert diagnosis on the source of pain, injury, and decrease in abilities, even when standard tests have not been helpful!</p>
-            <p>A thorough history, physical exam and biomechanical assessment help determine factors contributing to the dysfunction and pain.</p>
-            <p>Experience analyzing pain from sports injury, arthritis, fibromyalgia, disc dz, surgery, pregnancies, middle age, et al.</p>
-            <p>A complete explanation of your problem and discussion of the most advanced non-invasive treatment options.</p>
+            <h3 class="media-heading">Unsurpassed Skills:</h3>
+            <p>A thorough history and physical exam</p>
+            <p>Expertise in diagnosing the cause and source of pain, injury, and decrease in abilities - even when standard tests have not been helpful</p>
+            <p>A biomechanical assessment determining factors contributing to the dysfunction</p>
+            <p>Individually designed treatement program and discussion of therapeutic options</p>
+            <p>Restoration to maximum activity without surgery</p>
           </div>
-        </div></a><br>
-      <div class="media"><a href="http://google.com">
-          <div class="col-xs-12 col-sm-4"><img src="img/Assessment.jpg" class="media-img"></div>
-          <div class="col-xs-12 col-sm-8">
-            <h3 class="media-heading">Assesment:</h3>
-            <p>Expert diagnosis on the source of pain, injury, and decrease in abilities, even when standard tests have not been helpful!</p>
-            <p>A thorough history, physical exam and biomechanical assessment help determine factors contributing to the dysfunction and pain.</p>
-            <p>Experience analyzing pain from sports injury, arthritis, fibromyalgia, disc dz, surgery, pregnancies, middle age, et al.</p>
-            <p>A complete explanation of your problem and discussion of the most advanced non-invasive treatment options.</p>
-          </div></a></div><br>
-      <div class="media"><a href="approach.html" class="text-right">
-          <div class="col-xs-12 col-sm-4 col-sm-push-8"><img src="img/Treatment.jpg" class="media-img"></div>
-          <div class="col-xs-12 col-sm-8 col-sm-pull-4">
-            <h3 class="media-heading">Treatment:</h3>
-            <p>Recieve Individually Designed and Tailored Treatment options.</p>
-            <P>Programs are Designed to Restore Maximum Function without surgery.</P>
-            <p>Specializing in the treatment of muscle, bursae, joint, ligament and nerve pain.</p>
-            <p>Utilizing Mastery of understanding the Musculoskeletal System,  Movement, Exercise, and  Neuromuscular Retraining.</p>
-          </div></a></div><br>
-      <div class="media"><a href="prolotherapy.html">
-          <div class="col-xs-12 col-sm-4"><img src="img/Techniques.jpg" class="media-img"></div>
-          <div class="col-xs-12 col-sm-8">
-            <h3 class="media-heading">Techniques:</h3>
-            <p>No Steroids, no Pain Killers and no Surgery!</p>
-            <p>Applying Prolotherapy injections to facilitate healing and tissue regeneration.</p>
-            <p>Emphasis on NeuroMuscular Retraining and Proper Biomechanics.</p>
-          </div></a></div><br><br><br>
+        </div></a><a href="http://google.com" class="para-link">
+        <div style="overflow:auto" class="picture-paragraph">
+          <div style="padding-top:15px; float: right;" class="col-xs-12 col-sm-4"><img src="img/Approach.jpg" style="width:100%; border-radius:5px;"/></div>
+          <div style="padding: 15px;" class="caption">
+            <h3 class="media-heading">Proactive Approach:</h3>
+            <p>Perhaps you though you just needed to accept certain problems, even though they negatively impacted your daily life</p>
+            <p>Dr. Meyer offers an alternative to using solely pain killers or receiving steroid injections which may merely be masking symptoms or put you at risk for future injury</p>
+            <p>Pain from arthritis, bursitis, tendonitis, disc problems, whiplash, nerve impingement, cartilage damage, fibromyalgia, strains, overuse injuries, chronic illness, etc. require a hands-on evaluation and often involve the entire kinetic chain</p>
+            <p>A foot problem may have originated from weakness in the hip and vice versa. The upper and lower core and even the way you breathe affects the neck and back. The shoulders and knees often take the brunt of overall deconditioning. </p>
+          </div>
+        </div></a><a href="http://google.com" class="para-link">
+        <div style="overflow:auto" class="picture-paragraph">
+          <div style="padding-top:15px; float: left;" class="col-xs-12 col-sm-4"><img src="img/Prolotherapy.jpg" style="width:100%; border-radius:5px;"/></div>
+          <div style="padding: 15px;" class="caption">
+            <h3 class="media-heading">Are You a Candidate for Prolotherapy?</h3>
+            <p>Exercize therapy addresses muscles and proper mechanics.</p>
+            <p>Hands-on soft-tissue work, other therapeutic modalities, as well as exercise prepare the body for return to activity</p>
+            <p>Orthotics can add needed support to the foot to improve gait and alignment</p>
+            <P>Prolotherapy can repair the damaged tissue that causes pain</P>
+            <p>It heals the injured tissues in and around the joints (i.e. in the knee or the spine). It strengthens ligaments and tendons and takes away pain. It involves the injection of a safe solution causing a natural local reaction, which increases blood supply and flow of nutrients and stimulates tissue repair.  It is less traumatic to the body than arthroscopic, microscopic or open surgery and there is no down time or months of recovery.</p>
+            <p>It is also very affordable.</p>
+          </div>
+        </div></a><a href="http://google.com" class="para-link">
+        <div style="overflow:auto" class="picture-paragraph">
+          <div style="padding-top:15px; float: right;" class="col-xs-12 col-sm-4"><img src="img/Skills.jpg" style="width:100%; border-radius:5px;"/></div>
+          <div style="padding: 15px;" class="caption">
+            <h3 class="media-heading">Techniques</h3>
+            <p>After understanding your unique neuro-musculoskeletal system Dr. Meyer will help you retrain to achieve a higher level of function</p>
+            <p>Together you will consider prolotherapy to facilitate healing and tissue regeneration</p>
+          </div>
+        </div></a>
       <div class="text-center">
         <h1>Testimonials</h1>
         <hr>
@@ -119,7 +128,7 @@
           <div role="listbox" class="carousel-inner">
             <div class="item active">
               <div class="container">
-                <div class="carousel-spacer"></div>
+                <div style="width:100%; height:250px; display:block;" class="carousel-spacer"></div>
                 <div class="carousel-caption">
                   <p>"I'm very happy with the successful treatment Dr. Meyer has been giving me. Natural, effective, to the source of the problem, and cost effective. What more could you want?"
                   </p>
@@ -129,7 +138,7 @@
             </div>
             <div class="item">
               <div class="container">
-                <div class="carousel-spacer"></div>
+                <div style="width:100%; height:250px; display:block;" class="carousel-spacer"></div>
                 <div class="carousel-caption">
                   <p>"When I fist saw Dr. Meyer, I could barely make it up the stairs to her office at the time. I had a constant pain down the front of my shin. I was desperate for help. I was upset because I couldn't even walk onto the field and watch my grandson's Little League games. Dr. M and Prolotherapy changed my life! Now I walk comfortably and move freely. And, I know where to go for help when I need it."
                   </p>
@@ -139,7 +148,7 @@
             </div>
             <div class="item">
               <div class="container">
-                <div class="carousel-spacer"></div>
+                <div style="width:100%; height:250px; display:block;" class="carousel-spacer"></div>
                 <div class="carousel-caption">
                   <p>"My experience with Joy Meyer has been exceptional. Her ability to know exactly what my injury is and know exactly how to treat it is amazing! Within a short period of time doing her recommended excercises and checkups, I am back on my feet and free of injury!"
                   </p>
@@ -149,7 +158,7 @@
             </div>
             <div class="item">
               <div class="container">
-                <div class="carousel-spacer"></div>
+                <div style="width:100%; height:250px; display:block;" class="carousel-spacer"></div>
                 <div class="carousel-caption">
                   <p>"I was struggling with a sever case of Plantar Fasciitis for many months until the tendon finally gave out and tore. I went from being frustrated, running in pain every day, to running pain-free! If my foot acts up again - I will definitely be back for some Prolo!"
                   </p>
@@ -159,7 +168,7 @@
             </div>
             <div class="item">
               <div class="container">
-                <div class="carousel-spacer"></div>
+                <div style="width:100%; height:250px; display:block;" class="carousel-spacer"></div>
                 <div class="carousel-caption">
                   <p>"Dr. Meyer is a very focused doctor with a completely different perspective. She analyzes your problem from a physical function standpoint. I have seen her for my back and knee. The combination of rethinking of how to use my body, how to strengthen those muscles I should be using and don't, and prolotherapy has given me tremendous relief to my back. My knee pain diminished thanks to prolo. It took more time but I decided against the knee surgery and I'm glad I did."
                   </p>
@@ -169,7 +178,7 @@
             </div>
             <div class="item">
               <div class="container">
-                <div class="carousel-spacer"></div>
+                <div style="width:100%; height:250px; display:block;" class="carousel-spacer"></div>
                 <div class="carousel-caption">
                   <p>"Great doctor! The only doctor that helped me after 10 years of searching for someone for back and hip problem. Prolotherapy worked for me."
                   </p>

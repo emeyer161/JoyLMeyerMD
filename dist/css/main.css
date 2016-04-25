@@ -6578,3 +6578,7 @@ p {
 .page-img {
   width: 100%;
 }
+.picture-paragraph {
+  overflow: auto;
+  margin: 10px auto;
+}

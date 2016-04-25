@@ -13,9 +13,13 @@ module.exports = function(grunt) {
 					'dist/physiatry.html': 'src/jade/views/physiatry.jade',
 					'dist/approach.html': 'src/jade/views/approach.jade',
 					'dist/ailments.html': 'src/jade/views/ailments.jade',
-					'dist/about.html': 'src/jade/views/about.jade',
+					'dist/drmeyer.html': 'src/jade/views/drmeyer.jade',
 					'dist/appointments.html': 'src/jade/views/appointments.jade',
 					'dist/contact.html': 'src/jade/views/contact.jade',
+					'dist/golfers.html': 'src/jade/views/golfers.jade',
+					'dist/runners.html': 'src/jade/views/runners.jade',
+					'dist/knees.html': 'src/jade/views/knees.jade',
+					'dist/shoulders.html': 'src/jade/views/shoulders.jade',
 				}
 		  	}
 		},
