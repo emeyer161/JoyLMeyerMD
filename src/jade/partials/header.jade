@@ -1,18 +1,24 @@
 header
-	div(id="titleBar" style="position: relative; z-index: 10")
+	div(id="titleBar" style="position: relative; z-index: 10; padding:10px 0;")
 		.container
 			.row
-				.col-sm-6.col-xs-12#header-left
-					.col-xs-4
+				.col-lg-8.col-sm-6.col-xs-12#header-left
 						img#logo(src="http://jeffwardmd.com/images/abpmrlogo.jpg")
-					.col-xs-8
 						h1 Joy L Meyer, M.D.
 						h3 Physical Medicine and Rehabilitation
-				.col-sm-6.col-xs-12#header-right
-						h3 (518) 360-6627
-						h4 1659 Central Ave.
-						h4 Colonie, NY 12205
-						p: a(class="btn btn-xs btn-primary" href="#" role="button") Make an Appointment
+				.col-lg-4.col-sm-6.col-xs-12.text-center.pull-right
+						.col-xs-6.text-right
+							h4 Mondays
+							h5 1659 Central Ave.
+							h5 Colonie, NY 12205
+						.col-xs-6.text-left
+							h4 Wednesdays
+							h5 274 Delaware Ave.
+							h5 Delmar, NY 12054
+						h4 (518) 360-6627
+						a(class="btn btn-xs btn-primary" href="appointments.html" role="button" style="margin-right:10px") Make an Appointment  
+						a(href="https://www.facebook.com/JoyLMeyerMd" target="_blank")
+							img(src="img/facebook_logo.png" style="height:22px")
 
 
 	nav( role="navigation", class="navbar navbar-default navbar-static-top", style="position: relative; z-index: 1; box-shadow: 0 0 20px 1px black")
@@ -25,7 +31,6 @@ header
 					span.icon-bar
 					span.icon-bar
 					span.icon-bar
-				//- a.navbar-brand(href="#")= "Joy L. Meyer"
 
 			.collapse.navbar-collapse( id="dropdown_menu" )
 				ul.nav.navbar-nav
@@ -38,11 +43,5 @@ header
 						+nav_item( "runners.html" ) Runners
 						+nav_item( "knees.html" ) Knee Pain
 						+nav_item( "shoulders.html" ) Shoulder Pain
-					+nav_item( "appointments.html", "active" ) Appointments
+					+nav_item( "appointments.html" ) Appointments
 					+nav_item( "contact.html" ) Contact & Locations
-				ul.nav.navbar-nav.navbar-right
-					+nav_item("https://www.facebook.com/JoyLMeyerMd", "_blank")
-						span.glyphicon.glyphicon-user
-						span 
-						| Facebook
-						//- img(src="http://image005.flaticon.com/28/svg/33/33702.svg")

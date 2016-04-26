@@ -12,21 +12,25 @@
   </head>
   <body>
     <header>
-      <div id="titleBar" style="position: relative; z-index: 10">
+      <div id="titleBar" style="position: relative; z-index: 10; padding:10px 0;">
         <div class="container">
           <div class="row">
-            <div id="header-left" class="col-sm-6 col-xs-12">
-              <div class="col-xs-4"><img id="logo" src="http://jeffwardmd.com/images/abpmrlogo.jpg"></div>
-              <div class="col-xs-8">
-                <h1>Joy L Meyer, M.D.</h1>
-                <h3>Physical Medicine and Rehabilitation</h3>
-              </div>
+            <div id="header-left" class="col-lg-8 col-sm-6 col-xs-12"><img id="logo" src="http://jeffwardmd.com/images/abpmrlogo.jpg">
+              <h1>Joy L Meyer, M.D.</h1>
+              <h3>Physical Medicine and Rehabilitation</h3>
             </div>
-            <div id="header-right" class="col-sm-6 col-xs-12">
-              <h3>(518) 360-6627</h3>
-              <h4>1659 Central Ave.</h4>
-              <h4>Colonie, NY 12205</h4>
-              <p><a href="#" role="button" class="btn btn-xs btn-primary">Make an Appointment</a></p>
+            <div class="col-lg-4 col-sm-6 col-xs-12 text-center pull-right">
+              <div class="col-xs-6 text-right">
+                <h4>Mondays</h4>
+                <h5>1659 Central Ave.</h5>
+                <h5>Colonie, NY 12205</h5>
+              </div>
+              <div class="col-xs-6 text-left">
+                <h4>Wednesdays</h4>
+                <h5>274 Delaware Ave.</h5>
+                <h5>Delmar, NY 12054</h5>
+              </div>
+              <h4>(518) 360-6627</h4><a href="appointments.html" role="button" style="margin-right:10px" class="btn btn-xs btn-primary">Make an Appointment  </a><a href="https://www.facebook.com/JoyLMeyerMd" target="_blank"><img src="img/facebook_logo.png" style="height:22px"></a>
             </div>
           </div>
         </div>
@@ -53,11 +57,8 @@
                   <li><a href="shoulders.html">Shoulder Pain</a></li>
                 </ul>
               </li>
-              <li><a href="appointments.html" target="active">Appointments</a></li>
+              <li><a href="appointments.html">Appointments</a></li>
               <li><a href="contact.html">Contact & Locations</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="https://www.facebook.com/JoyLMeyerMd" target="_blank"><span class="glyphicon glyphicon-user"></span><span> </span>Facebook</a></li>
             </ul>
           </div>
         </div>
@@ -68,7 +69,7 @@
       <hr>
       <div class="col-xs-12">
         <div style="overflow:auto" class="picture-paragraph">
-          <div style="padding-top:15px; float: left;" class="col-xs-12 col-sm-4"><img src="img/Portrait.jpg" style="width:100%; border-radius:5px;"/></div>
+          <div style="padding-top:15px; float: left;" class="col-xs-12 col-sm-4"><img src="img/portrait.jpg" style="width:100%; border-radius:5px;"/></div>
           <div style="padding: 15px;" class="caption">
             <h4>B.A. Biochemistry '82, Princeton University</h4>
             <h4>Doctor of Medicine ’89, University of Maryland</h4>
@@ -86,7 +87,20 @@
       </div>
     </div>
     <footer>
-      <div id="footerBar">textHere</div>
+      <div id="footerBar">
+        <div class="container">
+          <div class="col-sm-6 col-xs-12">
+            <h6>Navigation</h6>
+            <p></p><a href="index.html">Home </a> | <a href="appointments.html">Appointments </a> | <a href="contact.html">Contact & Locations </a>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <h6>Accreditations:</h6>The American Board of Physical Medicine and Rehabilitation<br>The Academy of Physiatry
+          </div>
+        </div>
+      </div>
+      <div id="copyrightBar">
+        <div class="container">© Copyright 2016 | Joy L. Meyer, M.D. Physical Medicine and Rehabilitation | All Rights Reserved</div>
+      </div>
     </footer>
   </body>
 </html>
