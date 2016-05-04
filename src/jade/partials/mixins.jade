@@ -22,10 +22,10 @@ mixin nav_header
 
 
 mixin picture_paragraph(imgSrc, side)
-	.picture-paragraph(style="overflow:auto")
-		.col-xs-12.col-sm-4(style="padding-top:15px; float: #{side};")
+	.picture-paragraph(style="overflow:auto; margin:0")
+		.col-xs-12.col-sm-4(style="float: #{side};")
 			img(src=imgSrc style="width:100%; border-radius:5px;")
-		.caption(style="padding: 15px;")
+		.caption(style="padding: 0 15px;")
 			block
 
 
