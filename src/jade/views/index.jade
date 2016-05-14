@@ -17,40 +17,44 @@ block content
 		p With over 15 years of extensive training and experience in Prolotherapy, Dr. Meyer is the ONLY Capital Region Physician offering a full-spectrum of Prolotherapy options. This non-surgical approach offers an extremely affordable, and more natural path to eliminating pain. Get back to enjoying activities and living a healthy, full life today!
 
 	a.para-link(href='http://google.com')
-		+picture_paragraph('img/Assessment.jpg', 'left')
+		+picture_paragraph('img/stretch.png', 'left')
 			h3.media-heading Unsurpassed Skills:
-			p A thorough history and physical exam
-			p Expertise in diagnosing the cause and source of pain, injury, and decrease in abilities - even when standard tests have not been helpful
-			p A biomechanical assessment determining factors contributing to the dysfunction
-			p Individually designed treatement program and discussion of therapeutic options
-			p Restoration to maximum activity without surgery
+			ul
+				li: p A thorough history and physical exam
+				li: p Expertise in diagnosing the cause and source of pain, injury, and decrease in abilities - even when standard tests have not been helpful
+				li: p A biomechanical assessment determining factors contributing to the dysfunction
+				li: p Individually designed treatment program and discussion of therapeutic options
+				li: p Restoration to maximum activity without surgery
 
 	br
 	a.para-link(href='http://google.com')
-		+picture_paragraph('img/Approach.jpg', 'right')
+		+picture_paragraph('img/backpain.png', 'right')
 			h3.media-heading Proactive Approach:
-			p Perhaps you though you just needed to accept certain problems, even though they negatively impacted your daily life
-			p Dr. Meyer offers an alternative to using solely pain killers or receiving steroid injections which may merely be masking symptoms or put you at risk for future injury
-			p Pain from arthritis, bursitis, tendonitis, disc problems, whiplash, nerve impingement, cartilage damage, fibromyalgia, strains, overuse injuries, chronic illness, etc. require a hands-on evaluation and often involve the entire kinetic chain
-			p A foot problem may have originated from weakness in the hip and vice versa. The upper and lower core and even the way you breathe affects the neck and back. The shoulders and knees often take the brunt of overall deconditioning. 
+			ul
+				li: p Perhaps you thought you just needed to accept certain problems, even though they negatively impacted your daily life.
+				li: p Dr. Meyer offers an alternative to using solely pain killers or receiving steroid injections which may merely be masking symptoms or put you at risk for future injury.
+				li: p Pain from arthritis, bursitis, tendonitis, disc problems, whiplash, nerve impingement, cartilage damage, fibromyalgia, strains, overuse injuries, chronic illness, etc. require a hands-on evaluation and often involve the entire kinetic chain.
+				li: p A foot problem may have originated from weakness in the hip and vice versa. The upper and lower core and even the way you breathe affects the neck and back. The shoulders and knees often take the brunt of overall deconditioning. 
 
 	br
 	a.para-link(href='http://google.com')
-		+picture_paragraph('img/Prolotherapy.jpg', 'left')
+		+picture_paragraph('img/beforeafter.png', 'left')
 			h3.media-heading Are You a Candidate for Prolotherapy?
-			p Exercize therapy addresses muscles and proper mechanics.
-			p Hands-on soft-tissue work, other therapeutic modalities, as well as exercise prepare the body for return to activity
-			p Orthotics can add needed support to the foot to improve gait and alignment
-			P Prolotherapy can repair the damaged tissue that causes pain
-			p It heals the injured tissues in and around the joints (i.e. in the knee or the spine). It strengthens ligaments and tendons and takes away pain. It involves the injection of a safe solution causing a natural local reaction, which increases blood supply and flow of nutrients and stimulates tissue repair.  It is less traumatic to the body than arthroscopic, microscopic or open surgery and there is no down time or months of recovery.
-			p It is also very affordable.
+			ul
+				li: p Exercise therapy addresses muscles and proper mechanics.
+				li: p Hands-on soft-tissue work, other therapeutic modalities, as well as exercise prepare the body for return to activity
+				li: p Orthotics can add needed support to the foot to improve gait and alignment.
+				li: P PROLOTHERAPY CAN: repair the damaged tissue that causes pain.
+				li: p It heals the injured tissues in and around the joints (i.e. in the knee or the spine). It strengthens ligaments and tendons and takes away pain. It involves the injection of a safe solution causing a natural local reaction, which increases blood supply and flow of nutrients and stimulates tissue repair.  It is less traumatic to the body than arthroscopic, microscopic or open surgery and there is no down time or months of recovery.
+				li: p It is also very affordable.
 
 	br
 	a.para-link(href='http://google.com')
-		+picture_paragraph('img/Skills.jpg', 'right')
+		+picture_paragraph('img/prolospine.gif', 'right')
 			h3.media-heading Techniques
-			p After understanding your unique neuro-musculoskeletal system Dr. Meyer will help you retrain to achieve a higher level of function
-			p Together you will consider prolotherapy to facilitate healing and tissue regeneration
+			ul
+				li: p After understanding your unique neuro-musculoskeletal system Dr. Meyer will help you retrain to achieve a higher level of function
+				li: p Together you will consider prolotherapy to facilitate healing and tissue regeneration
 
 	.text-center
 		h1 Testimonials
@@ -67,13 +71,17 @@ block content
 
 				+carousel_slide( "H.S. Champion Runner, Courtney Tedeschi" ) "My experience with Joy Meyer has been exceptional. Her ability to know exactly what my injury is and know exactly how to treat it is amazing! Within a short period of time doing her recommended excercises and checkups, I am back on my feet and free of injury!"
 
-				+carousel_slide( "College of St. Rose Star Runner, Macky Lloyd" ) "I was struggling with a sever case of Plantar Fasciitis for many months until the tendon finally gave out and tore. I went from being frustrated, running in pain every day, to running pain-free! If my foot acts up again - I will definitely be back for some Prolo!"
+				+carousel_slide( "College of St. Rose Star Runner, Macky Lloyd" ) "I was struggling with a severe case of Plantar Fasciitis for many months until the tendon finally gave out and tore. I went from being frustrated, running in pain every day, to running pain-free! If my foot acts up again - I will definitely be back for some Prolo!"
 
 				+carousel_slide( "Bob Balcom" ) "Dr. Meyer is a very focused doctor with a completely different perspective. She analyzes your problem from a physical function standpoint. I have seen her for my back and knee. The combination of rethinking of how to use my body, how to strengthen those muscles I should be using and don't, and prolotherapy has given me tremendous relief to my back. My knee pain diminished thanks to prolo. It took more time but I decided against the knee surgery and I'm glad I did."
 
 				+carousel_slide( "Linda Murray" ) "Great doctor! The only doctor that helped me after 10 years of searching for someone for back and hip problem. Prolotherapy worked for me."
 
-
+block javascript
+	script(type='text/javascript').
+		$('#testimonials').carousel({
+			interval: 5000
+		})
 
 
 

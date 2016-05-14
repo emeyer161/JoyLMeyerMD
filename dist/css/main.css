@@ -6530,6 +6530,26 @@ button.close {
     display: none !important;
   }
 }
+.carousel-spacer {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+@media (max-width: 1200px) {
+  .carousel-spacer {
+    height: 350px;
+  }
+}
+@media (max-width: 900px) {
+  .carousel-spacer {
+    height: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .carousel-spacer {
+    height: 550px;
+  }
+}
 body {
   background-color: #3189B2;
 }
