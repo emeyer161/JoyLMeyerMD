@@ -40,9 +40,13 @@ p{
 	background-color:white;
 }
 #logo{
-	height:130px;
+	height:120px;
 	float:left;
 	margin-right:10px
+}
+#headshot{
+	float:right;
+	border-radius:100%;
 }
 .navbar{
 	margin-bottom:0px;
@@ -51,6 +55,15 @@ p{
 @media (max-width: @screen-sm) {
    	#header-right, #header-left{
 		text-align:center;
+   	}
+   	#header-left h1{
+		font-size:25px;
+   	}
+   	#header-left h2{
+		font-size:20px;
+   	}
+   	#headshot{
+   		float:none;
    	}
 }
 #content{
