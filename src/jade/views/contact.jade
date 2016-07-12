@@ -16,11 +16,13 @@ block content
 	.row
 		.col-md-6.col-sm-12.text-center
 			h3 Colonie
+			p: small * Handicap Accessible
 			.embed-responsive.embed-responsive-4by3
 				iframe(width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ8eMz160M3okRB6VBjO5dZ_o&key=AIzaSyA_b0HrflwJHyzYhNKyu8wO_S0zrv1i3lg&zoom=13" allowfullscreen)
 
 		.col-md-6.col-sm-12.text-center
 			h3 Delmar
+			p: small * Second Floor
 			.embed-responsive.embed-responsive-4by3
 				iframe(width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=274%20Delaware%20Ave.%20%20Delmar%2C%20NY%2012054&key=AIzaSyA_b0HrflwJHyzYhNKyu8wO_S0zrv1i3lg&zoom=13" allowfullscreen)
 	br
@@ -28,7 +30,14 @@ block content
 	h1.text-center(style="") Contact
 	hr
 	.row
-		.col-sm-8.col-sm-offset-2.col-xs-12.text-center
+		.col-sm-4.col.col-xs-12.text-center
+			h3 Mailing Address
+			p Dr. Meyer
+			p P.O. Box 461
+			p Slingerlands, NY  12159
+			br
+			h4: a(href="mailto:joy@drjoymeyer.com") Joy@DrJoyMeyer.com
+		.col-sm-8.col-xs-12.text-center
 			form#appointmentForm(method='POST' action='https://formspree.io/meyer.ej@gmail.com')
 				input(type="hidden" name="_next" value="/contact.html")
 				input(type="hidden" name="_subject" value="Appointment Request")

@@ -8,18 +8,18 @@ module.exports = function(grunt) {
 					pretty: true,
 				},
 				files: {
-					'dist/index.html': 'src/jade/views/index.jade',
-					'dist/prolotherapy.html': 'src/jade/views/prolotherapy.jade',
-					'dist/physiatry.html': 'src/jade/views/physiatry.jade',
-					'dist/approach.html': 'src/jade/views/approach.jade',
-					'dist/ailments.html': 'src/jade/views/ailments.jade',
-					'dist/drmeyer.html': 'src/jade/views/drmeyer.jade',
-					'dist/appointments.html': 'src/jade/views/appointments.jade',
-					'dist/contact.html': 'src/jade/views/contact.jade',
-					'dist/golfers.html': 'src/jade/views/golfers.jade',
-					'dist/runners.html': 'src/jade/views/runners.jade',
-					'dist/knees.html': 'src/jade/views/knees.jade',
-					'dist/shoulders.html': 'src/jade/views/shoulders.jade',
+					'public_html/index.html': 'src/jade/views/index.jade',
+					'public_html/prolotherapy.html': 'src/jade/views/prolotherapy.jade',
+					'public_html/physiatry.html': 'src/jade/views/physiatry.jade',
+					'public_html/approach.html': 'src/jade/views/approach.jade',
+					'public_html/ailments.html': 'src/jade/views/ailments.jade',
+					'public_html/drmeyer.html': 'src/jade/views/drmeyer.jade',
+					'public_html/appointments.html': 'src/jade/views/appointments.jade',
+					'public_html/contact.html': 'src/jade/views/contact.jade',
+					'public_html/golfers.html': 'src/jade/views/golfers.jade',
+					'public_html/runners.html': 'src/jade/views/runners.jade',
+					'public_html/knees.html': 'src/jade/views/knees.jade',
+					'public_html/shoulders.html': 'src/jade/views/shoulders.jade',
 				}
 		  	}
 		},
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 					cleancss: true
 				},
 				files: {
-				  'dist/css/main.css': 'src/less/main.less' // destination file and source file
+				  'public_html/css/main.css': 'src/less/main.less' // destination file and source file
 				}
 		  	}
 		},
