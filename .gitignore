@@ -1,5 +1,6 @@
-/node_modules
-/Marketing
-Gruntfile.js
-/src
-.gitignore
+*
+!/public_html/
+!/public_html/*/
+!/public_html/*/*/
+!/public_html/*/*/*/
+!.gitignore
