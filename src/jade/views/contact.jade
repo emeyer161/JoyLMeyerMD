@@ -2,7 +2,7 @@ extends ../template.jade
 include ../partials/mixins
 
 block append title 
-	| Contact & Directions
+	| Contact & Location
 
 block append style
 	style.
@@ -11,47 +11,38 @@ block append style
 		}
 
 block content
-	h1.text-center Locations
-	hr
 	.row
 		.col-md-6.col-sm-12.text-center
-			h3 Colonie
-			p: small * Handicap Accessible, Suite 100 in General Orthopedic
-			.embed-responsive.embed-responsive-4by3
-				iframe(width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ8eMz160M3okRB6VBjO5dZ_o&key=AIzaSyA_b0HrflwJHyzYhNKyu8wO_S0zrv1i3lg&zoom=13" allowfullscreen)
+			h2 Contact
+			hr
+			.row
+				.col-lg-12
+					form#appointmentForm(method='POST' action='https://formspree.io/joy@drjoymeyer.com')
+						input(type="hidden" name="_next" value="/contact.html")
+						input(type="hidden" name="_subject" value="Someone Filled out your Contact Form!")
+						.col-md-6.col-sm-12
+							fieldset.form-group
+								label(for="name") Name:
+								input.form-control#name(name="name" type="text" required placeholder="John Smith")
+						.col-md-6.col-sm-12
+							fieldset.form-group
+								label(for="email") Email Address:
+								input.form-control#email(name="_replyto" type="email" required placeholder="example@email.com")
+								span#email-invalid(style="visibility:hidden") Must use a valid email address
+						.col-xs-12
+							fieldset.form-group
+								label(for="message") Message:
+								textarea.form-control#message(rows='8' name="message" type="text" required placeholder="Enter a message")
+						.col-xs-6
+							button.pull-left.btn.btn-primary(type="submit") Submit
+						.col-xs-6
+							h4.pull-right: a(href="mailto:joy@drjoymeyer.com") Joy@DrJoyMeyer.com
 
 		.col-md-6.col-sm-12.text-center
-			h3 Delmar
-			p: small * Second Floor, Suite 2B in Hands of Grace
-			.embed-responsive.embed-responsive-4by3
-				iframe(width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=274%20Delaware%20Ave.%20%20Delmar%2C%20NY%2012054&key=AIzaSyA_b0HrflwJHyzYhNKyu8wO_S0zrv1i3lg&zoom=13" allowfullscreen)
-	br
-	
-	h1.text-center(style="") Contact
-	hr
-	.row
-		.col-sm-4.col.col-xs-12.text-center
-			h3 Mailing Address
-			p Dr. Meyer
-			p P.O. Box 461
-			p Slingerlands, NY  12159
-			br
-			h4: a(href="mailto:joy@drjoymeyer.com") Joy@DrJoyMeyer.com
-		.col-sm-8.col-xs-12.text-center
-			form#appointmentForm(method='POST' action='https://formspree.io/joy@drjoymeyer.com')
-				input(type="hidden" name="_next" value="/contact.html")
-				input(type="hidden" name="_subject" value="Someone Filled out your Contact Form!")
-				.col-md-6.col-sm-12
-					fieldset.form-group
-						label(for="name") Name:
-						input.form-control#name(name="name" type="text" required placeholder="John Smith")
-				.col-md-6.col-sm-12
-					fieldset.form-group
-						label(for="email") Email Address:
-						input.form-control#email(name="_replyto" type="email" required placeholder="example@email.com")
-						span#email-invalid(style="visibility:hidden") Must use a valid email address
-				.col-xs-12
-					fieldset.form-group
-						label(for="message") Message:
-						textarea.form-control#message(rows='8' name="message" type="text" required placeholder="Enter a message")
-				button.btn.btn-primary(type="submit") Submit
+			h2 Location
+			hr
+			.row
+				.col-lg-12
+					.embed-responsive.embed-responsive-4by3
+						iframe(width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.700196017655!2d-73.82550558442867!3d42.625313926301175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dde029d8df1079%3A0x4560eb4ccd0d143a!2sHands+of+Grace!5e0!3m2!1sen!2sus!4v1535594019366&zoom=13" allowfullscreen)
+					p: small * Second Floor, Suite 2B in Hands of Grace
